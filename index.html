@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html>
-<body onload="afficher()">
-
-
-
-<p id="one"></p>
-<button onclick="random()">Random</button>
+<body>
 
 <script>
-    function random(){
-        document.getElementById("one").innerHTML = Math.floor(Math.random()* 2 );
-    }
-    function afficher(){
-        random();
-        <p>test</p>
-    }
+let rdmval = Math.floor(Math.random()* 2 )
+if(val == 0){
+    document.body.innerHTML = "<h1>premiere page: rdmval = " + rdmval+ "</h1>"
+}else{
+    document.body.innerHTML = "<h1>deuxieme page: rdmval = " + rdmval+ "</h1>"
+}
 </script>
-
-
 
 </body>
