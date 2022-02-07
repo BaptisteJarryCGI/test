@@ -5,17 +5,9 @@
 <script>
 let rdmval = Math.floor(Math.random()* 2 )
 if(rdmval == 0){
-    document.body.innerHTML = "<h1>premiere page: rdmval = " + rdmval+ "</h1>"
+    window.location.href="./page1.html";
 }else{
-    document.body.innerHTML = "<h1>deuxieme page: rdmval = " + rdmval+ "</h1>"
+    window.location.href="./page2.html";
 }
 </script>
-
-<button onclick="next()">NEXT</button>
-
 </body>
-
-
-<script>
-    rdmval = (rdmval + 1)%2; 
-</script>
